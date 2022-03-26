@@ -285,13 +285,14 @@ function yun() {
 
 function pay() {
   ui.run(function () {
-    //console.show()
+    console.show()
     //ui.start.setText("嘤嘤嘤");
     //ui.pay.setSource("file://res/pay2.png");
   });
 } //启动时下面的图
 
 function qdqx() {
+
   var thread = threads.start(function () {
 zuixinbanbenhao = http.get("https://raw.githubusercontent.com/F-Huo/WFcode/main/banben.js").body.string().split("版本")[1];
     if(zuixinbanbenhao=="undefined"){zuixinbanbenhao=banbenhao;} 
@@ -300,7 +301,6 @@ if (banbenhao == zuixinbanbenhao) {
     } else {
       gengxin = 0;
     }
-console.show()
     console.log(banbenhao);
     console.log(zuixinbanbenhao);
     if (banbenhao == zuixinbanbenhao) {
