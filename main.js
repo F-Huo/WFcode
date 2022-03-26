@@ -293,6 +293,8 @@ function pay() {
 
 function qdqx() {
 pay(); 
+toast("00000")
+sleep(5000)
   var thread = threads.start(function () {
 zuixinbanbenhao = http.get("https://raw.githubusercontent.com/F-Huo/WFcode/main/banben.js").body.string().split("版本")[1];
     if(zuixinbanbenhao=="undefined"){zuixinbanbenhao=banbenhao;} 
