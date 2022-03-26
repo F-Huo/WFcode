@@ -1,0 +1,33 @@
+{
+  "assets": [],
+  "build": {
+    "build_id": "6C4F8C1E-4",
+    "build_number": 4,
+    "build_time": 1639208852849,
+    "release": false
+  },
+  "encryptLevel": 0,
+  "useFeatures": [],
+  "icon": "res/icon.png",
+  "launchConfig": {
+    "displaySplash": false,
+    "hideLogs": false,
+    "stableMode": false
+  },
+  "main": "main.js",
+  "name": "AutoWF",
+  "optimization": {
+    "removeAccessibilityService": false,
+    "removeOpenCv": false,
+    "unusedResources": false
+  },
+  "packageName": "com.fire.autowf",
+  "permissionConfig": {
+    "requestListOnStartup": [
+      "android.permission.WRITE_EXTERNAL_STORAGE"
+    ]
+  },
+  "scripts": {},
+  "versionCode": 8,
+  "versionName": "0.0.8"
+}
