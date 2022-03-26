@@ -293,7 +293,6 @@ function pay() {
 
 function qdqx() {
   var thread = threads.start(function () {
-    console.show()
 zuixinbanbenhao = http.get("https://raw.githubusercontent.com/F-Huo/WFcode/main/banben.js").body.string().split("版本")[1];
     if(zuixinbanbenhao=="undefined"){zuixinbanbenhao=banbenhao;} 
 if (banbenhao == zuixinbanbenhao) {
@@ -301,6 +300,7 @@ if (banbenhao == zuixinbanbenhao) {
     } else {
       gengxin = 0;
     }
+console.show()
     console.log(banbenhao);
     console.log(zuixinbanbenhao);
     if (banbenhao == zuixinbanbenhao) {
