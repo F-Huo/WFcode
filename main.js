@@ -109,6 +109,7 @@ ui.layout(
 
 /////////////////////////////////////////////////////////////
 var banbenhao = 1;
+console.show()
 let ViewIdListRegisterListener = require("./ViewIdListRegisterListener");
 let storage = storages.create("UIConfigInfo");
 let kongjian = [
