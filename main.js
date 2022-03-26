@@ -109,7 +109,6 @@ ui.layout(
 
 /////////////////////////////////////////////////////////////
 var banbenhao = 1;
-console.show()
 let ViewIdListRegisterListener = require("./ViewIdListRegisterListener");
 let storage = storages.create("UIConfigInfo");
 let kongjian = [
@@ -294,7 +293,8 @@ function pay() {
 
 function qdqx() {
   var thread = threads.start(function () {
-    zuixinbanbenhao = http.get("https://raw.githubusercontent.com/F-Huo/WFcode/main/banben.js").body.string().split("版本")[1];
+    console.show()
+zuixinbanbenhao = http.get("https://raw.githubusercontent.com/F-Huo/WFcode/main/banben.js").body.string().split("版本")[1];
     if(zuixinbanbenhao=="undefined"){zuixinbanbenhao=banbenhao;} 
 if (banbenhao == zuixinbanbenhao) {
       gengxin = 1;
