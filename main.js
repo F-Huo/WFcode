@@ -108,7 +108,7 @@ ui.layout(
 );
 
 /////////////////////////////////////////////////////////////
-var banbenhao = 5;
+var banbenhao = 1;
 let ViewIdListRegisterListener = require("./ViewIdListRegisterListener");
 let storage = storages.create("UIConfigInfo");
 let kongjian = [
@@ -259,16 +259,16 @@ ui.start.on("click", function () {
 function yun() {
   toast("发现有新版本。正在更新中......");
   uuu = [
-    "wfui.txt",
-    "kk.txt",
-    "codes.txt",
-    "main.txt",
-    "shuoming.txt",
-    "chenggong.txt",
-    "shibai.txt"
+    "wfui.js",
+    "kk.js",
+    "codes.js",
+    "main.js",
+    "shuoming.js",
+    "chenggong.js",
+    "shibai.js"
   ];
   for (var i = 0; i < uuu.length; i++) {
-    let url = "https://gitee.com/F-Huo/wf_code/raw/master/" + uuu[i];
+    let url = "https://raw.githubusercontent.com/F-Huo/WFcode/main/" + uuu[i];
     let res = http.get(url);
     console.log("正在更新脚本");
     if (res.statusCode != 200) {
@@ -293,7 +293,7 @@ function pay() {
 
 function qdqx() {
   var thread = threads.start(function () {
-    zuixinbanbenhao = http.get("https://gitee.com/F-Huo/wf_code/raw/master/banben.txt").body.string().split("版本")[1];
+    zuixinbanbenhao = http.get("https://raw.githubusercontent.com/F-Huo/WFcode/main/banben.js").body.string().split("版本")[1];
     if (banbenhao == zuixinbanbenhao) {
       gengxin = 1;
     } else {
